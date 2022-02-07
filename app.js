@@ -53,7 +53,7 @@ class Interactions {
     row.innerHTML = `
         <td>${book.author}</td>
         <td>${book.title}</td>
-        <td><a href="#" class="delete">X</a></td>
+        <td><button class="delete">Remove book</button></td>
       `;
 
     list.appendChild(row);
