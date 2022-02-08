@@ -10,7 +10,7 @@
 <body>
     <div class="container">
         <header><h1>Awesome Books</h1></header>
-            <table>
+            <table id="books">
                 <thead>
                     <tr>
                         <th>Author</th>
@@ -21,14 +21,15 @@
                 <tbody id="book-list"></tbody>
             </table>
         <hr>
+        <h2>Add a new book</h2>
         <form id="book-form">
             <div class="form-group">
-                <label for="title">Title</label>
-                <input type="text" id="title" required>
+                <label for="title"></label>
+                <input class="book-info" type="text" id="title" placeholder="Title" required>
             </div>
             <div class="form-group">
-                <label for="author">Author</label>
-                <input type="text" id="author" required>
+                <label for="author"></label>
+                <input class="book-info" type="text" id="author" placeholder="Author" required>
             </div>
             <input class="button" type="submit" value="Add Book">
         </form>

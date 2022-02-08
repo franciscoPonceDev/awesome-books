@@ -1,7 +1,6 @@
 body {
-    margin: 0;
-    background-color: lightgray;
-    font-family: 'Courier New', Courier, monospace;
+  margin: 0;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 .container {
@@ -9,35 +8,74 @@ body {
   margin-left: auto;
   margin-right: auto;
   display: flex;
-  flex-direction: column;;
+  flex-direction: column;
   text-align: center;
 }
 
 table {
-  border: 2px solid black;
-  width: auto;
-  display: flex;
-  flex-direction: column;
+  border-spacing: 0;
 }
 
-tr {
-  display: flex;
-  align-content: space-between;
+th {
+  text-align: center;
+  padding: 0.5rem;
 }
 
-.book-form {
+#book-list,
+thead {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+}
+
+#book-list td,
+#book-list th {
+  border: 1px solid #f2f2f2;
+  padding: 8px;
+}
+
+#book-list tr:nth-child(even) { background-color: #f2f2f2; }
+
+#book-list tr:hover { background-color: #ddd; }
+
+thead {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04aa6d;
+  color: white;
+}
+
+hr {
+  margin-top: 2rem;
+  border: #757575 solid 1px;
+  width: 5rem;
+}
+
+#book-form {
   display: flex;
   flex-direction: column;
-  width: 10%;
 }
 
 .form-group {
-  display: flex;
-  justify-content: space-between;
+  padding-bottom: 0.5rem;
+  box-sizing: border-box;
+}
+
+.book-info {
+  width: 100%;
+  height: 2rem;
+  font-size: 1rem;
+  margin: 0;
 }
 
 button,
 .button {
   background-color: white;
   border: 2px solid black;
+}
+
+.button {
+  width: fit-content;
+  align-self: flex-end;
+  padding: 0 20px;
 }
