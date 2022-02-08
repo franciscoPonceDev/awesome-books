@@ -51,9 +51,9 @@ class Interactions {
     const row = document.createElement('tr');
 
     row.innerHTML = `
-        <td>${book.author}</td>
-        <td>${book.title}</td>
-        <td><button class="delete">Remove book</button></td>
+          <td>${book.author}</td>
+          <td>${book.title}</td>
+          <td class="remove-btn"><button class="delete">Remove book</button></td>
       `;
 
     list.appendChild(row);
