@@ -1,4 +1,42 @@
 body {
     margin: 0;
     background-color: lightgray;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.container {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;;
+  text-align: center;
+}
+
+table {
+  border: 2px solid black;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+tr {
+  display: flex;
+  align-content: space-between;
+}
+
+.book-form {
+  display: flex;
+  flex-direction: column;
+  width: 10%;
+}
+
+.form-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  background-color: white;
+  border: 2px solid black;
 }
