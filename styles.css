@@ -36,7 +36,8 @@ tr {
   justify-content: space-between;
 }
 
-button {
+button,
+.button {
   background-color: white;
   border: 2px solid black;
 }
