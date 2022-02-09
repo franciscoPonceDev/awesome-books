@@ -8,7 +8,20 @@
     <title>Awesome Books</title>
 </head>
 <body>
+    <!-- CREATE NAVBAR -->
+    <header>
+        <nav>
+            <h1>Awesome Books</h1>
+            <ul>
+                <li><p id="dList" onclick="displayList()">List</p></li>
+                <li><p id="dAddBook" onclick="displayAddBook()">Add book</p></li>
+                <li><p id="dContact" onclick="displayContact()">Contact</p></li>
+            </ul>
+        </nav>
+        <p id="date"></p>
+    </header>
     <div class="container">
+        <section id="book-table">
         <header><h1>Awesome Books</h1></header>
             <table id="books">
                 <thead>
@@ -20,21 +33,34 @@
                 </thead>
                 <tbody id="book-list"></tbody>
             </table>
-        <hr>
-        <h2>Add a new book</h2>
-        <form id="book-form">
-            <div class="form-group">
-                <label for="title"></label>
-                <input class="book-info" type="text" id="title" placeholder="Title" required>
-            </div>
-            <div class="form-group">
-                <label for="author"></label>
-                <input class="book-info" type="text" id="author" placeholder="Author" required>
-            </div>
-            <input class="button" type="submit" value="Add Book">
-        </form>
+        </section>
+        <section id="new-book">
+            <h2>Add a new book</h2>
+            <form id="book-form">
+                <div class="form-group">
+                    <label for="title"></label>
+                    <input class="book-info" type="text" id="title" placeholder="Title" required>
+                </div>
+                <div class="form-group">
+                    <label for="author"></label>
+                    <input class="book-info" type="text" id="author" placeholder="Author" required>
+                </div>
+                <input id="submit-btn" class="button" type="submit" value="Add Book">
+            </form>
+        </section>
+        <section id="contact">
+            <header><h1>Contact Information</h1></header>
+            <h2>Do you have any questions or you just want to say "hello"? You can reach out to us!</h2>
+            <ul>
+                <li>Our e-mail mail@mail.com</li>
+                <li>Our phone number: 00435663442</li>
+                <li>Our address: Streetname 22, 84503 City, Country</li>
+            </ul>
+        </section>
     </div>
-
+    <footer>
+            <h2>Copyright...</h2>
+    </footer>
     <script src="app.js"></script>
 </body>
 </html>
