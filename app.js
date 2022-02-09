@@ -104,7 +104,7 @@ const date = new Date();
 document.getElementById('date').innerHTML = date;
 
 // onclick List
-
+/* eslint-disable no-unused-vars */
 function displayList() {
   document.getElementById('book-table').style.display = 'flex';
   document.getElementById('new-book').style.display = 'none';

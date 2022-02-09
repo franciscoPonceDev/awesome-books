@@ -21,12 +21,12 @@ header {
 }
 
 nav {
-display: flex;
-justify-content: space-between;
-align-items: center;
-margin: 0 1rem;
-padding: 0 1.5rem;
-border: black 1px solid;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 1rem;
+  padding: 0 1.5rem;
+  border: black 1px solid;
 }
 
 nav ul {
@@ -39,12 +39,12 @@ nav li {
   list-style: none;
 }
 
-p:hover {
-  cursor: pointer;
-}
-
 p {
   font-size: 1.2rem;
+}
+
+p:hover {
+  cursor: pointer;
 }
 
 #dList {
@@ -58,12 +58,7 @@ p {
 }
 
 #book-table {
-  width: 50%;
-  margin-left: auto;
-  margin-right: auto;
   display: flex;
-  flex-direction: column;
-  text-align: center;
 }
 
 table {
@@ -75,13 +70,19 @@ th {
   padding: 0.5rem;
 }
 
-#new-book {
+#new-book,
+#contact,
+#book-table {
   width: 50%;
   margin-left: auto;
   margin-right: auto;
-  display: none;
   flex-direction: column;
   text-align: center;
+}
+
+#new-book,
+#contact {
+  display: none;
 }
 
 #book-list,
@@ -152,3 +153,10 @@ footer h2 {
   text-align: start;
 }
 
+#contact ul {
+  text-align: left;
+}
+
+#contact h2 {
+  font-style: italic;
+}
