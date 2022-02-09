@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 /* eslint-disable max-classes-per-file */
 class Book {
   constructor(title, author) {
@@ -97,4 +98,50 @@ document.querySelector('#book-list').addEventListener('click', (e) => {
   Store.removeBook(e.target.parentElement.previousElementSibling.textContent);
 });
 
-// Remove Book
+// show date
+
+const date = new Date();
+document.getElementById('date').innerHTML = date;
+
+// onclick List
+
+function displayList() {
+  document.getElementById('book-table').style.display = 'flex';
+  document.getElementById('new-book').style.display = 'none';
+  document.getElementById('contact').style.display = 'none';
+  document.getElementById('dList').style.color = '#04aa6d';
+  document.getElementById('dAddBook').style.color = 'black';
+  document.getElementById('dContact').style.color = 'black';
+}
+
+// onclick Add Book
+
+function displayAddBook() {
+  document.getElementById('book-table').style.display = 'none';
+  document.getElementById('new-book').style.display = 'flex';
+  document.getElementById('contact').style.display = 'none';
+  document.getElementById('dList').style.color = 'black';
+  document.getElementById('dAddBook').style.color = '#04aa6d';
+  document.getElementById('dContact').style.color = 'black';
+}
+
+// onclick Contact
+
+function displayContact() {
+  document.getElementById('book-table').style.display = 'none';
+  document.getElementById('new-book').style.display = 'none';
+  document.getElementById('contact').style.display = 'block';
+  document.getElementById('dList').style.color = 'black';
+  document.getElementById('dAddBook').style.color = 'black';
+  document.getElementById('dContact').style.color = '#04aa6d';
+}
+
+// Submit book pressing enter key
+
+const input = document.getElementById('myInput');
+input.addEventListener('keyup', (event) => {
+  if (event.KeyboardEvent.code === 13) {
+    event.preventDefault();
+    document.getElementById('myBtn').click();
+  }
+});

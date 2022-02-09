@@ -1,9 +1,63 @@
 body {
   margin: 0;
   font-family: 'Courier New', Courier, monospace;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
 }
 
 .container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+header {
+  margin-top: 1rem;
+}
+
+nav {
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin: 0 1rem;
+padding: 0 1.5rem;
+border: black 1px solid;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  width: 35%;
+}
+
+nav li {
+  list-style: none;
+}
+
+p:hover {
+  cursor: pointer;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+#dList {
+  color: #04aa6d;
+}
+
+#date {
+  font-size: 0.8rem;
+  text-align: end;
+  margin: 0.5rem 1rem;
+}
+
+#book-table {
   width: 50%;
   margin-left: auto;
   margin-right: auto;
@@ -19,6 +73,15 @@ table {
 th {
   text-align: center;
   padding: 0.5rem;
+}
+
+#new-book {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  display: none;
+  flex-direction: column;
+  text-align: center;
 }
 
 #book-list,
@@ -43,12 +106,6 @@ thead {
   text-align: left;
   background-color: #04aa6d;
   color: white;
-}
-
-hr {
-  margin-top: 2rem;
-  border: #757575 solid 1px;
-  width: 5rem;
 }
 
 #book-form {
@@ -79,3 +136,19 @@ button,
   align-self: flex-end;
   padding: 0 20px;
 }
+
+#contact {
+  display: none;
+}
+
+footer {
+  border: black solid 1px;
+  margin: 1rem;
+}
+
+footer h2 {
+  padding: 0 1rem;
+  font-size: 1.2rem;
+  text-align: start;
+}
+
