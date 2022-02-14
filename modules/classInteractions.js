@@ -1,4 +1,4 @@
-import { Book } from './classBook.js';
+/* eslint-disable import/prefer-default-export */
 import { Store } from './classStore.js';
 
 export class Interactions {

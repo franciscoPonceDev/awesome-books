@@ -1,3 +1,4 @@
+/* eslint-disable import/prefer-default-export */
 export class Store {
   static getBooks() {
     let books;
