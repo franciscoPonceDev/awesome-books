@@ -1,4 +1,4 @@
-// onclick List
+// onclick Lis
 /* eslint-disable no-unused-vars */
 function displayList() {
   document.getElementById('book-table').style.display = 'flex';
