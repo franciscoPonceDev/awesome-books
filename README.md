@@ -1,18 +1,18 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
+![Screenshot_24](https://user-images.githubusercontent.com/93161838/155188253-301da264-1eb9-4510-8531-1ed4e08b7136.png)
 
 # Awesome-Books
 
-> Wireframe website for adding and removing books from a list stored in local storrage.
+> A nice simple app where you can add and remove books. The books you add are stored in Local Storage.
 
 ## Built With
 
 - HTML
-- Javascript
-- Linters
+- CSS
+- JavaScript
 
 ## Live Demo
 
-To be added later
+[Live Demo](https://franciscoponcedev.github.io/awesome-books/)
 
 ## Getting Started
 
