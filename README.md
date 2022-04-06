@@ -26,8 +26,8 @@ To get a local copy up and running follow these simple example steps.
 
 👤 **Francisco Ponce**
 
-- GitHub: @franciscoPonceDev
-- LinkedIn: LinkedIn
+- GitHub: [@franciscoPonceDev](https://github.com/franciscoPonceDev)  
+- LinkedIn: [Francisco Ponce](https://www.linkedin.com/in/dev-ponce/)
 
 
 👤 **Chris Clothier**
